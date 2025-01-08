@@ -1,0 +1,94 @@
+/* Modern color scheme */
+:root {
+    --primary: #2c3e50;
+    --secondary: #34495e;
+    --accent: #3498db;
+    --light: #ecf0f1;
+    --dark: #2c3e50;
+  }
+  
+  /* Global styles */
+  body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--light);
+  }
+  
+  /* Navbar styling */
+  .navbar {
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      padding: 1rem 0;
+  }
+  
+  /* Room cards */
+  .room-card {
+      transition: transform 0.3s;
+      border: none;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  
+  .room-card:hover {
+      transform: translateY(-5px);
+  }
+  
+  .room-card img {
+      height: 200px;
+      object-fit: cover;
+  }
+  
+  /* Form styling */
+  .form-control {
+      border-radius: 8px;
+      padding: 0.8rem;
+      border: 1px solid #ddd;
+  }
+  
+  .form-control:focus {
+      box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.25);
+  }
+  
+  /* Button styling */
+  .btn {
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 500;
+      transition: all 0.3s;
+  }
+  
+  .btn-primary {
+      background: var(--accent);
+      border: none;
+  }
+  
+  .btn-primary:hover {
+      background: #2980b9;
+      transform: translateY(-2px);
+  }
+  
+  /* Hero section */
+  .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../images/hotel-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 100px 0;
+      margin-bottom: 40px;
+  }
+  
+  /* Features section */
+  .feature-box {
+      text-align: center;
+      padding: 30px;
+      background: white;
+      border-radius: 10px;
+      margin-bottom: 30px;
+  }
+  
+  /* Animations */
+  .fade-in {
+      animation: fadeIn 0.5s ease-in;
+  }
+  
+  @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+  }
